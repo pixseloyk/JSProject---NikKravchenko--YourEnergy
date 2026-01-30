@@ -1,7 +1,7 @@
 <div class="container">
   <div class="header-container" id="header__top">
-    <a class="header__logo" href="./index.html">
-      <svg width="132" height="24">
+    <a class="header__logo" href="./index.html" aria-label="Your Energy Home">
+      <svg width="132" height="24" aria-hidden="true">
         <use href="./img/sprite.svg#icon-Logo"></use>
       </svg>
       <span class="header__logo-text">Your Energy</span>
@@ -20,9 +20,9 @@
           class="header__socials-link"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="facebook icon"
+          aria-label="Facebook"
         >
-          <svg class="header__socials-icon" width="7" height="17">
+          <svg class="header__socials-icon" width="7" height="17" aria-hidden="true">
             <use href="./img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
@@ -33,9 +33,9 @@
           class="header__socials-link"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="instagram icon"
+          aria-label="Instagram"
         >
-          <svg class="header__socials-icon" width="24" height="24">
+          <svg class="header__socials-icon" width="24" height="24" aria-hidden="true">
             <use href="./img/sprite.svg#icon-instagram"></use>
           </svg>
         </a>
@@ -46,19 +46,21 @@
           class="header__socials-link"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="youtube icon"
+          aria-label="Youtube"
         >
-          <svg class="header__socials-icon" width="24" height="24">
+          <svg class="header__socials-icon" width="24" height="24" aria-hidden="true">
             <use href="./img/sprite.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
     </ul>
+
     <button
       class="menu-open__button js-open-menu"
       type="button"
       aria-expanded="false"
       aria-controls="mobile-menu"
+      aria-label="Open mobile menu"
       data-menu-open-btn
     >
       <svg
@@ -66,16 +68,14 @@
         width="32"
         height="32"
         stroke="var(--color-black)"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-        role="img"
+        aria-hidden="true"
       >
         <use
           class="menu-open__use"
           href="./img/sprite.svg#icon-align-justify"
         ></use>
       </svg>
-      <span class="burger-btn">burger</span>
+      <span class="burger-btn" aria-hidden="true">burger</span>
     </button>
   </div>
 </div>
@@ -86,9 +86,10 @@
       type="button"
       class="menu-close__button js-close-menu"
       data-menu-close-btn
+      aria-label="Close mobile menu"
     >
-      <svg class="menu-close__icon" width="32" height="32">
-        <use href="./sprite.svg#icon-x-close"></use>
+      <svg class="menu-close__icon" width="32" height="32" aria-hidden="true">
+        <use href="./img/sprite.svg#icon-x-close"></use>
       </svg>
     </button>
 
@@ -110,9 +111,9 @@
           href="https://www.facebook.com/goITclub/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="facebook icon"
+          aria-label="Facebook"
         >
-          <svg class="menu__socials-icon" width="7" height="17">
+          <svg class="menu__socials-icon" width="7" height="17" aria-hidden="true">
             <use href="./img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
@@ -123,9 +124,9 @@
           href="https://www.instagram.com/goitclub/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="instagram icon"
+          aria-label="Instagram"
         >
-          <svg class="menu__socials-icon" width="24" height="24">
+          <svg class="menu__socials-icon" width="24" height="24" aria-hidden="true">
             <use href="./img/sprite.svg#icon-instagram"></use>
           </svg>
         </a>
@@ -136,14 +137,3 @@
           class="menu__socials-link"
           href="https://www.youtube.com/c/GoIT"
           target="_blank"
-          rel="noopener noreferrer"
-          aria-label="youtube icon"
-        >
-          <svg class="menu__socials-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-youtube"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
