@@ -65,7 +65,7 @@ export function renderExercises(results) {
           <div class="card__block-btn">
               <p class="card__badge">Workout</p>
               <span class="card__rating">
-                <span>${rating}</span>
+                <span>${rating % 1 === 0 ? rating + '.0' : rating}</span>
                 <svg class="card__rating-star" width="18" height="18">
                   <use href="${icons}#icon-star"></use>
                 </svg>
@@ -84,11 +84,13 @@ export function renderExercises(results) {
                 </div>
                 <h2 class="card__title">${name}</h2>
               </div>
+              
               <div class="card__block-info">
-                <p class="card__text-info"><span>Burned calories:</span>${burnedCalories}</p>
-                <p class="card__text-info"><span>Body part:</span>${bodyPart}</p>
-                <p class="card__text-info"><span>Target:</span>${target}</p>
+                <p class="card__text-info"><span class="card__text-gray">Burned calories:</span> ${burnedCalories}</p>
+                <p class="card__text-info"><span class="card__text-gray">Body part:</span> ${bodyPart}</p>
+                <p class="card__text-info"><span class="card__text-gray">Target:</span> ${target}</p>
               </div>
+              
         </div>
       </li>`;
     })
