@@ -19,3 +19,32 @@
 @import url('./layout/09-loader.css');
 @import url('./layout/10-favorites.css');
 @import url('./layout/11-modal-bmi.css');
+
+/* --- FIX FOR EXERCISE CARDS --- */
+
+/* Контейнер для нижнього рядка (Calories, Body part, Target) */
+.card__block-info {
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє елементам переноситись, якщо мало місця */
+  gap: 14px;       /* Відступ між групами тексту */
+  margin-top: 8px;
+}
+
+/* Стилі для кожного блоку тексту */
+.card__text-info {
+  font-family: 'Neue Montreal', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #242424;
+  
+  /* Забороняємо розривати пару "Назва: Значення", але дозволяємо блоку переноситись */
+  white-space: nowrap; 
+  display: flex;
+  align-items: center;
+}
+
+/* Робимо назви параметрів сірими (як у макеті) */
+.card__text-gray {
+  color: rgba(36, 36, 36, 0.4);
+  margin-right: 4px; /* Маленький відступ після двокрапки */
+}
